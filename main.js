@@ -11,7 +11,7 @@ const score = document.querySelector('.score'),
 
 const audio = document.createElement('embed');
 audio.src = '../music/audio.mp3';
-audio.type = 'audio/mp3';
+audio.type = 'audio/mpeg';
 audio.style.cssText = 'position: absolute; top: -10000px';  //так можно добавить аудио фоном     
 
 car.classList.add('car');
@@ -94,7 +94,7 @@ function startGame(event) {
   };
 
   //отрисовка соперника
-  for (let j = 0; j < getQuantityElements(100 * setting.traffic); j++) {
+  for (let j = 0; j < getQuantityElements(HEIGHT_ELEM * setting.traffic); j++) {
     const enemy = document.createElement('div');
     enemy.classList.add('enemy');
     enemy.y = -HEIGHT_ELEM * setting.traffic * (j + 1);
