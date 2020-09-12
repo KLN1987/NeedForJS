@@ -1,7 +1,7 @@
 const MIN_ENEMY = 1;
 const MAX_ENEMY = 2;
 const HEIGHT_ELEM = 100; //параметр не менять, т.к. придется менять css, чтобы машины влезли
-const COUNT_CHANGE_LEVEL = 2000; //полсе этого числа увеличивается скорость игры
+const COUNT_CHANGE_LEVEL = 1500; //полсе этого числа увеличивается скорость игры
 
 const score = document.querySelector('.score'),
     start = document.querySelector('.game__start'),
